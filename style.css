@@ -184,4 +184,19 @@ header .logo
   {
     font-size: 2em;
   }
+  /* code for mobile bg */
+  .showcase {
+    background-image: url(./images-and-videos/mobile-bg.jpeg);
+    background-size: 100vh;
+    background-position: center;
+    
+    
+  }
+  .logo {
+    position: fixed;
+    top: 30px;
+  }
+  .logo img {
+    height: 50px;
+  }
 }
