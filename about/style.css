@@ -16,6 +16,7 @@ body {
 /* Navbar Part */
 
 .navbar {
+    border-bottom:1px solid white;
     display: flex;
     color: #F9FAF8;
     background-color:hsl(348, 52%, 25%);;
@@ -29,8 +30,8 @@ body {
   font-weight: 800;
   line-height: 1em;
   text-transform: uppercase;
-}  
-  
+}
+
 .header-logo img {
     width: 84px;
     height: 84px;
@@ -40,8 +41,8 @@ body {
 .header-link {
     display: flex;
     margin-left: 0;
-    padding: 0px 100px 0px 0px;  
-    
+    padding: 0px 100px 0px 0px;
+
 }
 
 .header-link a {
@@ -76,6 +77,11 @@ body {
     flex-direction: column;
     text-align: left;
     margin-right: 50px;
+
+}
+.hero-cta h1 {
+    text-transform: capitalize;
+    font-weight: 600;
 }
 
 .hero-cta p {
@@ -83,43 +89,54 @@ body {
     opacity: 0.7;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: bold;
-    color: #F9FAF8;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-}
 
-/* .hero button { */
-    /* display: block; */
-    /* text-align: center; */
-    /* width: 110px; */
-    /* border: none; */
-    /* background: #3882f6; */
-    /* padding: 10px; */
-    /* border-radius: 8px; */
-    /* color: #fff; */
-    /* font-family: 'Poppins', sans-serif; */
-    /* text-decoration: none; */
-    /* font-weight: bold; */
-/* } */
+
 
 .hero-image img {
     width: 500px;
     height: 350px;
     border-radius: 1.8em;
 }
+/* Mission Part */
+.container-mission{
+    display: flex;
+    /* border: 5px solid red; */
+    justify-content: space-around;
+    gap: 5em;
+    max-height: 400px;
+}
+.container-mission > * {
+    margin: 2em 0px;
+}
+.mission-vid {
+    min-height: 400px;
+    min-width: 200px;
+}
+.mission-card{
+    /* border: 5px solid blue; */
+    min-height: 350px;
+    background-color: hsl(348, 52%, 25%);
+    max-width: 400px;
+    color: white;
+    text-align: left;
+    padding: 5px 5px;
+    padding-bottom: 5px;
+    border-radius: 3em;
+}
+.mission-card > h2{
+    margin-left: 2em;
+}
+
 
 /* Content Part */
 
 .content {
+    margin-top: 4em;
     align-items: center;
 }
 
 .content-info {
     display: flex;
-    /* border: 1px solid gold; */
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -159,7 +176,7 @@ h1 {
 
 /* Sign Up Part */
 .sign-up {
-    background-color: hsl(348, 52%, 25%); 
+    background-color: hsl(348, 52%, 25%);
     margin: 50px 200px;
     padding: 10px 80px;
     display: flex;
@@ -202,7 +219,7 @@ h3 {
 /* Footer */
 
 .footer {
-    background-color: #1F2937;
+    background-color:  hsl(348, 52%, 25%);
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
