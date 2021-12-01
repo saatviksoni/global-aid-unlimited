@@ -4,10 +4,11 @@
         <link rel="icon" href="../images-and-videos/gba-logo.png">
         <link href="./style.css" rel="stylesheet" type="text/css" media="all"/>
         <title>Global Aid Unlimited</title>
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
         <div class="container">
-            
+
             <nav class="bx navbar">
                 <div class="header-logo">
                     <img src="../images-and-videos/gba-logo.png">
@@ -19,27 +20,34 @@
                     <a href="../index.html">Home</a>
                 </div>
             </nav>
-            
+
             <div class="bx hero">
                 <div class="hero-1 hero-cta">
                     <h1>Aid for the forgotten animals</h1>
-                    <p>We're a group of volunteers aiming to directly help the needful stray dogs of the city by rehabilitating them, and giving them all the love, care and dignity they need and deserve. We wish to provide a safe haven for all the dogs who have nobody else to protect them.</p>
+                    <p>We're a group of volunteers aiming to directly help the needful stray dogs of the city by rehabilitating them, and giving them all the love, care and dignity they need and deserve.</p>
                 </div>
                 <div class="hero-1 hero-image">
-                    <img src="../images-and-videos/image0 (1).jpeg" alt="shiba">
+                    <img src="../images-and-videos/desktop-bg.jpeg" alt="hero-pic">
                 </div>
             </div>
             <div class="bx container-mission">
                 <div class="mission-card">
-                    <h2>Our Mission-</h2>
+                    <h2>Our Mission -</h2>
                     <ul>
                         <li>Providing a safe haven for all the neglected, abused and abandoned animals</li>
-                        <li>Providing veterinary services to as many dogs as possible for the safety pf them as well as the people around them.</li>
+                        <li>Providing veterinary services to as many dogs as possible for the safety of them as well as the people around them.</li>
                         <li>Promoting adoption and fostering by educating the public about the pitiful conditions of most street dogs</li>
                     </ul>
                 </div>
-                <video class = 'mission-vid'controls="controls" src="../images-and-videos/247149335_3330848627040052_5507117168541404301_n.mp4">
-
+                <div class="carousel-wrapper">
+                    <div class="carousel-container">
+                      <div class="carousel">
+                        <div class="image-one"></div>
+                        <div class="image-two"></div>
+                        <div class="image-three"></div>
+                      </div>
+                    </div>
+                  </div>
             </div>
             <div class="bx content">
                 <h2>What we do</h2>
@@ -81,5 +89,22 @@
                 <p>Copyright © Global Aid Unlimited 2021</p>
             </div>
         </div>
+        <script>
+            //common reveal options to create reveal animations
+            ScrollReveal({
+            //   reset: true,
+              distance: '60px',
+              duration: 2500,
+              delay: 400
+            });
+
+            //target elements, and specify options to create reveal animations
+            ScrollReveal().reveal('.navbar, .header-title', { delay: 400, origin: 'left' });
+            ScrollReveal().reveal('.hero .hero-cta, .hero-image', { delay: 400, origin: 'bottom' });
+            ScrollReveal().reveal('.container-mission', { delay: 700, origin: 'right' });
+            ScrollReveal().reveal('.content', { delay: 700, origin: 'bottom', interval: 200 });
+            ScrollReveal().reveal('.quote', { delay: 500, origin: 'top' });
+          </script>
+
     </body>
 </html>

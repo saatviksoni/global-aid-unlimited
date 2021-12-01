@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 body {
-    background-color: #FFFFFF;
+    background-color:rgba(247, 226, 188, 0.87);
     padding: 0;
     margin: 0;
     text-align: center;
@@ -16,10 +16,10 @@ body {
 /* Navbar Part */
 
 .navbar {
-    border-bottom:1px solid white;
+    border-bottom:1px solid rgba(247, 226, 188, 0.87);
     display: flex;
-    color: #F9FAF8;
-    background-color:hsl(348, 52%, 25%);;
+    color: rgba(247, 226, 188, 0.87);
+    background-color:hsl(348, 52%, 25%);
     padding: 20px 0px 20px 100px;
     align-items: center;
     justify-content: space-between;
@@ -47,7 +47,7 @@ body {
 
 .header-link a {
     text-decoration: none;
-    color: #E5E7EB;
+    color:rgba(247, 226, 188, 0.87);
     font-size: 18px;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
@@ -63,12 +63,11 @@ body {
 
 .hero {
     display: flex;
-    color: #F9FAF8;
+    color: rgba(247, 226, 188, 0.87);
     background-color: hsl(348, 52%, 25%);
     align-items: center;
     justify-content: center;
     padding: 90px;
-    /* border: 5px solid rebeccapurple; */
 }
 
 .hero-cta {
@@ -86,50 +85,153 @@ body {
 
 .hero-cta p {
     font-family: 'Poppins', sans-serif;
-    opacity: 0.7;
 }
-
-
-
 
 .hero-image img {
     width: 500px;
     height: 350px;
     border-radius: 1.8em;
 }
-/* Mission Part */
-.container-mission{
+/* mission */
+.container-mission {
     display: flex;
-    /* border: 5px solid red; */
-    justify-content: space-around;
-    gap: 5em;
-    max-height: 400px;
+    
 }
-.container-mission > * {
-    margin: 2em 0px;
+/* caraousel */
+.carousel-wrapper {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 25px 0px hsl(348, 52%, 25%);
+    border-radius: 20px;
+    margin-right: auto;
+    margin-top: 50px;
 }
-.mission-vid {
-    min-height: 400px;
-    min-width: 200px;
+.carousel-container {
+    width: 350px;
+    height: 460px;
+    overflow: hidden;
+    margin: 0 auto;
 }
-.mission-card{
-    /* border: 5px solid blue; */
-    min-height: 350px;
-    background-color: hsl(348, 52%, 25%);
+.carousel {
+    display: flex;
+    width: 2000px;
+    animation: sliding 12s infinite;
+}
+.carousel div {
+    width: 350px;
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+}
+.carousel:hover {
+    animation-play-state: paused;
+}
+.carousel .image-one {
+    background-image: url("../images-and-videos/carousel/./1.jpg");
+
+}
+.carousel .image-two {
+    background-image: url("../images-and-videos/carousel/2.jpg");
+
+}
+.carousel .image-three {
+    background-image: url("../images-and-videos/carousel/3.jpg");
+}
+@keyframes sliding {
+    30% {
+        transform: translateX(0);
+   }
+    35% {
+        transform: translateX(-400px);
+   }
+    65% {
+        transform: translateX(-400px);
+   }
+    70% {
+        transform: translateX(-800px);
+   }
+    98% {
+        transform: translateX(-800px);
+   }
+    100% {
+        transform: translateX(0);
+   }
+}
+@media screen and (max-width: 768px) {
+    .carousel-wrapper {
+        width: 312px;
+        height: 210px;
+   }
+    .carousel-container {
+        width: 240px;
+        height: 150px;
+   }
+    .carousel {
+        width: 720px;
+   }
+    .carousel > div {
+        width: 240px;
+        height: 150px;
+   }
+    @keyframes sliding {
+        30% {
+            transform: translateX(0);
+       }
+        35% {
+            transform: translateX(-240px);
+       }
+        65% {
+            transform: translateX(-240px);
+       }
+        70% {
+            transform: translateX(-480px);
+       }
+        98% {
+            transform: translateX(-480px);
+       }
+        100% {
+            transform: translateX(0);
+       }
+   }
+}
+
+.container-mission .mission-card {
+    box-sizing: border-box;
+    color: rgba(247, 226, 188, 0.87);
     max-width: 400px;
-    color: white;
+    /* border: 5px solid rebeccapurple; */
+    background-color: hsl(348, 52%, 25%);
+    margin-right: auto;
+    /* padding: 5em; */
+    padding-top: 2em;
+}
+.mission-card h2 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 2em;
+    padding-top: 0;
+    /* border: 5px solid rebeccapurple; */
+    /* margin: 0 2em; */
+    /* margin-left: 1em; */
+    /* text-align: left; */
+    margin-top: 0;
+    
+}
+.mission-card ul li {
     text-align: left;
-    padding: 5px 5px;
-    padding-bottom: 5px;
-    border-radius: 3em;
+    font-size: 16px;
 }
-.mission-card > h2{
-    margin-left: 2em;
+.mission-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin:2em 5em;
+    margin-left: 1em;
 }
-
-
-/* Content Part */
-
+/* content */
 .content {
     margin-top: 4em;
     align-items: center;
