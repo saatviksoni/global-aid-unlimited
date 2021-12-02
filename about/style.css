@@ -101,10 +101,8 @@ body {
     box-sizing: border-box;
     color: rgba(247, 226, 188, 0.87);
     max-width: 400px;
-    /* border: 5px solid rebeccapurple; */
     background-color: hsl(348, 52%, 25%);
     margin-right: auto;
-    /* padding: 5em; */
     padding-top: 2em;
 }
 .mission-card h2 {
@@ -112,10 +110,6 @@ body {
     font-weight: 600;
     font-size: 2em;
     padding-top: 0;
-    /* border: 5px solid rebeccapurple; */
-    /* margin: 0 2em; */
-    /* margin-left: 1em; */
-    /* text-align: left; */
     margin-top: 0;
 
 }
