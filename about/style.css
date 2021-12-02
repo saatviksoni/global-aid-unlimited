@@ -117,7 +117,7 @@ body {
     /* margin-left: 1em; */
     /* text-align: left; */
     margin-top: 0;
-    
+
 }
 .mission-card ul li {
     text-align: left;
@@ -134,96 +134,127 @@ body {
 
 
 /* content */
+.content h2 {
+    font-size: 2em;
+    color: hsl(348, 52%, 25%);
+}
 .content {
     margin-top: 4em;
     align-items: center;
 }
-
+.fas {
+    color: hsl(348, 52%, 25%);
+    font-size: 8em;
+}
 .content-info {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.content-info img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 4px solid hsl(348, 52%, 25%);
-    border-radius: 15px;
-    margin: 5px 20px 0px 20px;
-}
-
-/* Quotation Part */
-
-.quote {
-    display: flex;
-    flex-direction: column;
-    background-color: #E5E7EB;
-    padding: 0 200px;
-}
-
-.quote p {
-    font-size: 36px;
-    color: #1F2937;
-    font-style: italic;
-    font-weight: lighter;
-    font-family: 'Poppins', sans-serif;
-}
-
-.quote b {
-    padding-bottom: 20px;
-    padding-right: 10px;
-    font-family: 'Poppins', sans-serif;
-    text-align: right;
-}
-
-/* Sign Up Part */
-.sign-up {
-    background-color: hsl(348, 52%, 25%);
-    margin: 50px 200px;
-    padding: 10px 80px;
-    display: flex;
+    justify-content: space-around;
     align-items: center;
-    border-radius: 5px;
-    border-color: none;
-}
+    flex-wrap: wrap;
+    gap: 2em;
 
-.sign-item {
+}
+.content-info p {
+    color: hsl(348, 52%, 25%);
+    width: 10em;
+    text-align: center;
+}
+.content-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.content-card p {
+    width: 190px;
+}
+/* Donation Part */
+.donation {
+    display: flex;
+    margin-top: 5em;
+}
+.donation > * {
     flex: 1;
+    font-size: 30px;
+    padding: 2em 3em;
 }
-
-.signs-text {
-    text-align: left;
+.box-2{
+    background-color: hsl(348, 52%, 25%);
+    color: rgba(247, 226, 188, 0.87);
 }
-
-.signs-text p {
-    color: #fff;
-    opacity: 0.7;
-    margin: 5px 30px 30px 50px;
+.box-1{
+    background-color: rgba(247, 226, 188, 0.87);
+    color: hsl(348, 52%, 25%);
 }
+/* Call us part */
+ .call {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin: 5em 0;
+     color: hsl(348, 52%, 25%);
+ }
+ .call-btn
+{
+  display: flex;
+  font-size: 1em;
+  background:hsl(348, 52%, 25%);
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color:rgba(247, 226, 188, 0.87);
+  letter-spacing: 2px;
+  transition: 0.5s;
+  width: 120px;
 
-h3 {
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    padding: 0;
-    margin: 30px 0px 0px 50px;
+
 }
-
-.signs-button button {
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    border-color: #fff;
-    border-radius: 8px;
-    background-color: #3882F6;
-    padding: 5px 25px;
-    font-size: 15px;
+.call-btn:hover
+{
+  letter-spacing: 6px;
 }
+.social
+{
+  display: flex;
+  align-items: center;
+  /* border: 5px solid rebeccapurple; */
+  padding-inline-start: 0;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
 
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
 /* Footer */
 
 .footer {
     background-color:  hsl(348, 52%, 25%);
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    padding: 2em 0;
+}
+.footer p {
+    margin: 0;
+}
+/* mobile */
+@media (max-width: 991px){
+    body, .mission-card ul li, .header-link a{
+        font-size: 22px;
+    }
+    .call-text{
+        max-width: 300px;
+    }
 }
