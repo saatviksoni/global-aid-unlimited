@@ -252,9 +252,15 @@ body {
 /* mobile */
 @media (max-width: 991px){
     body, .mission-card ul li, .header-link a{
-        font-size: 22px;
+        font-size: 27px;
     }
     .call-text{
         max-width: 300px;
+    }
+    .container-mission > * {
+        flex: 1; 
+    }
+    .container-mission .mission-card {
+        max-width: none;
     }
 }
