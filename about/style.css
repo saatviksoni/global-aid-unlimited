@@ -102,7 +102,6 @@ body {
     color: rgba(247, 226, 188, 0.87);
     max-width: 400px;
     background-color: hsl(348, 52%, 25%);
-    margin-right: auto;
     padding-top: 2em;
 }
 .mission-card h2 {
@@ -125,7 +124,6 @@ body {
     margin-left: 1em;
 }
 /* caraousel */
-
 
 /* content */
 .content h2 {
