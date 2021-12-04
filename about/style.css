@@ -123,8 +123,23 @@ body {
     margin:2em 5em;
     margin-left: 1em;
 }
-/* caraousel */
-
+/* images */
+.img-container {
+    /* border: 5px solid green; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 0;
+    
+}
+.img-container img {
+    width: 400px;
+    height: 500px;
+    border-radius: 1.8em;
+    /* border: 5px solid hsl(348, 52%, 25%); */
+    box-shadow: 0 5px 10px hsl(348, 52%, 25%), 0 15px 40px hsl(348, 52%, 25%);
+}
 /* content */
 .content h2 {
     font-size: 2em;
@@ -254,5 +269,10 @@ body {
     }
     .container-mission .mission-card {
         max-width: none;
+    }
+    .img-container {
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
     }
 }
